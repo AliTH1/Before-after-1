@@ -1,0 +1,43 @@
+.element{
+    width: 100px;
+    height: 50px;
+    float: left;
+    background-color: rgb(155, 155, 155);
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+.element span{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.element::before{
+    content: ":before";
+    width: 100px;
+    height: 50px;
+    background-color: rgb(77, 112, 77);
+    float: left;
+    position: absolute;
+    top: -50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.element::after{
+    content: ":after";
+    width: 100px;
+    height: 50px;
+    float: left;
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(77, 112, 77);
+}
